@@ -6,7 +6,7 @@ let m = require('mithril')
 let AppView = require('./view')
 
 
-// Mount the Address component in the DOM.
+// Mount the Triangle component in the DOM.
 document.addEventListener('DOMContentLoaded', function () {
     // Add the app to the DOM
     m.mount(document.getElementById('app'), AppView)

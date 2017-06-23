@@ -12,7 +12,7 @@ let TriangleForm = {
     view: function ({state}) {
         return m('form', Triangle.sides.map((side, index) => {
             return m('label', [
-                `Step ${index + 1}`,
+                `Side ${index + 1}`,
                 m('input[type=number][min=0]', {
                     oninput: m.withAttr('value', Triangle.setSide.bind(null, index)),
                     value: side
