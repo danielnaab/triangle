@@ -3,6 +3,8 @@
 This is a simple Mithril.js example application that, given three lengths, will
 identify what kind of triangle it corresponds to.
 
+As a little bonus, if it is a legal triangle an SVG of it is rendered.
+
 ## Notes
 
 - This application uses [Mithril.js](https://mithril.js.org) for a simple

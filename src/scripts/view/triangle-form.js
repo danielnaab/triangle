@@ -6,7 +6,7 @@ const Triangle = require('../models').Triangle
 
 
 /*
- * Renders an a form for entering the three side lengths of a triangle.
+ * Renders a form for entering the three side lengths of a triangle.
  */
 let TriangleForm = {
     view: function ({state}) {

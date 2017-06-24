@@ -3,17 +3,14 @@
 const m = require('mithril')
 
 const TriangleForm = require('./triangle-form')
-const Triangle = require('../models').Triangle
+const TriangleVis = require('./triangle-vis')
 
 
 let AppView = {
-    setCallback: function (callback) {
-        AppView.callback = callback
-    },
     view: function (vnode) {
         return m('div', [
-            m('h1', Triangle.getClassification()),
-            m(TriangleForm)
+            m(TriangleForm),
+            m(TriangleVis)
         ])
     }
 }

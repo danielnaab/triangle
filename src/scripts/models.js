@@ -68,6 +68,18 @@ const Triangle = {
 
         // All sides unique - scalene
         return Triangle.TYPES.SCALENE
+    },
+
+    getPoints: function () {
+        // Put the first side along the x-axis and solve for the third point.
+        let [A, B, C] = Triangle.sides
+        let x = A.pow(2).add(B.pow(2)).minus(C.pow(2)).div(A.times(2)).abs()
+        let y = (C.pow(2).minus(x.pow(2)).minus(A.pow(2)).add(A.times(x).times(2))).sqrt()
+        return [
+            {x: 0, y: 0},
+            {x: A, y: 0},
+            {x: x, y: y}
+        ]
     }
 }
 
